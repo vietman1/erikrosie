@@ -439,7 +439,7 @@ var Neela;
 
                         $.ajax({
                             type: "POST",
-                            url: "https://flashcard.truyendoc247.com/api/v1/wishes",
+                            url: "https://flashcard.truyendoc247.com/api/v1/wishes-ha",
                             data: data,
                             dataType: 'application/json',
                             // success: function (res) {
@@ -778,7 +778,7 @@ var Neela;
         console.log('wish length: ', wishes.length);
         const lastWish = wishes[wishes.length - 1];
         console.log('lash wish', lastWish);
-        let url = 'https://flashcard.truyendoc247.com/api/v1/wishes?';
+        let url = 'https://flashcard.truyendoc247.com/api/v1/wishes-ha';
         if (lastWish && $(lastWish).data('id')) {
             url += '&_id_lt=' + $(lastWish).data('id');
         }
