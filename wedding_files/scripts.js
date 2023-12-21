@@ -804,9 +804,9 @@ var Neela;
         console.log('load complete');
         setTimeout(function () {
             const images = $('#albums img');
-            for (const image of images) {
-                image.src = image.src.replace('albums', 'large-albums');
-            }
+            // for (const image of images) {
+            //     image.src = image.src.replace('albums', 'large-albums');
+            // }
 
             $('#youtube').append(`<iframe width="560" height="315" src="https://www.youtube.com/embed/VdOWRX8vcM0?si=_lEBP-2yhVl7ybJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
 
